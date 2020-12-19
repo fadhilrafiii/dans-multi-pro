@@ -1,0 +1,74 @@
+$primary: hsl(171, 100%, 41%);
+
+.navbar {
+    background-color: $primary;
+    padding: 15px;
+    align-items: center;
+    width: 100%;
+    z-index: 10 ;
+
+    .navbar-brand {
+        position: relative; 
+
+        h3 {
+            font-weight: 900;
+            color: white;
+        } 
+        
+        span {
+            color: white;
+        }
+    }
+    
+    .navbar-menu {
+        background-color: $primary;
+        box-shadow: none;
+    }
+
+    .navbar-end {
+        a.navbar-item {
+            color: white;
+            margin-right: 12px;
+        }
+
+        a:hover {
+            background-color: $primary;
+            transform: scale(1.2);
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .buttons .button {
+        margin-top: 30px;
+    }
+
+    a.navbar-item {
+        padding: 15px 12px;
+    }
+
+    .navbar-menu {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        background-color: inherit!important;
+        box-shadow: none;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.4s;
+        padding: 25px 30px;
+        
+
+        .navbar-item {
+            padding: 20px 0!important;
+        }
+    }
+
+    .navbar-menu.is-active {
+        left: 0;
+        display: flex;
+        transition: all 0.4s;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,50 @@
+$primary: hsl(171, 100%, 41%);
+
+.login-page {
+    margin: 20vh auto;
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.4);
+    border-radius: 20px;
+    position: relative;
+    // align-items: center;
+    
+    vertical-align: middle;
+    width: 70%;
+
+    .login-container {
+        align-items: center;
+        margin: auto;
+
+        .piclog-container {
+            padding: 0;
+            img {
+                width: 95%;
+                position: relative;
+            }
+            
+        }
+
+        .login-input-container {
+            padding: 5vw;
+            box-shadow: -3px 0 8px 0 rgba(0,0,0,0.1);
+
+            label {
+                font-weight: 400;
+            }
+
+            button {
+                background-color: $primary;
+                font-family: 'Montserrat', sans-serif!important;
+                margin-top: 10%;
+                color: white;
+            }
+
+            button:hover {
+                color: $primary;
+                border-color: $primary;
+                background-color: white;
+            }
+
+            
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.progress {
+    background: rgba(0,0,0, 0.3);
+  
+    &::-webkit-progress-bar {
+      background: transparent !important; // override bulma.css
+    }
+  
+    &:indeterminate {
+      animation: progress-indeterminate 1.5s linear infinite;
+      background: rgb(41, 162, 164) linear-gradient(to right, #00d1b2 30%, rgba(0,0,0, 0.3) 30%) top left / 150% 150% no-repeat;
+      
+      &::-moz-progress-bar {
+        background: transparent !important; // override bulma.css
+      }
+    }
+  }
+  
+  @keyframes progress-indeterminate {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }

@@ -1,0 +1,116 @@
+$primary: hsl(171, 100%, 41%);
+$hoverprim: hsl(171, 20%, 93%);
+
+
+.search-job {
+    margin: 0 10%;
+    a {
+        color: #4a4a4a!important;
+    }
+
+    h2 {
+        font-weight: 900;
+        text-align: center;
+        margin: 4vw;
+    }
+
+    .search-job-container {
+
+        border-radius: 20px;
+        margin-bottom: 5%;
+
+        .search-container {
+            padding: 5%;
+            background-color: $primary!important;
+            border-radius: 20px;
+            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+            height: 50%;
+            position: relative;
+
+           .search {
+                position: relative;
+                color:#4a4a4a!important;
+                font-weight: 500 ;
+
+                input {
+                    margin-top: 10px!important;
+                }
+
+                .checkbox {
+                    align-items: center;
+
+                    label {
+                        margin-left: 10px;
+                    }
+
+                    input[type="checkbox"] {
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: middle;
+                        margin: 0!important;
+                    }
+                }
+
+                .button {
+                    background-color: white!important;
+                    color: #4a4a4a;
+                    margin-top: 20px;
+                }
+
+                .button:hover {
+                    border-color: white;
+                    color: white!important;
+                    background-color: $primary!important;
+                }
+           }
+        }
+
+        .result-container {
+            padding: 0 0 0 5%;
+
+            progress {
+                margin-top: 20%;
+            }
+
+            .job:hover {
+                background-color: $hoverprim!important;
+            }
+
+            .job {
+                padding: 3%;
+                height: 180px;
+                box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.4);
+                margin-bottom: 30px;
+                border-radius: 8px;
+
+                .leftContent {
+                    width: 75%;
+                }
+
+                h3 {
+                    font-size: 1.25rem!important;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-size: .8rem;
+                }
+
+                .rightContent {
+                    margin-left: auto;
+                    text-align: right;
+
+                    img {
+                        width: 35%;
+                    }
+
+                    a {
+                        position: relative;
+                        font-size: .75rem;
+                        color: #4a4a4a;
+                    }
+                }
+            }
+        }
+    }
+}
